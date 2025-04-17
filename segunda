@@ -1,0 +1,21 @@
+int nota1, nota2, media;
+    char nome1[25];
+    
+    printf("digite seu nome completo: \n");
+    fgets(nome1, 25, stdin);
+    printf("sua nota em matematica: \n");
+    scanf(" %d", &nota1);
+    printf("sua nota em portugues: \n");
+    scanf("%d", &nota2);
+    
+    printf("aluno: %s\n", nome1);
+    media = (nota1 + nota2)/2;
+    if(media>6){
+        printf("situaçao: aprovado");
+    }else if(media = 6){
+        printf("situaçao: recuperacao");
+    }else{
+        printf("situaçao: reprovado");
+    }
+    
+    
